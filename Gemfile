@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-ruby '2.2.4'
+ruby '2.5.1'
 
 gem 'redis'
 gem 'sinatra'
@@ -11,10 +11,10 @@ gem 'pg'
 #gem 'activerecord'
 #gem 'sinatra-activerecord'
 #gem 'rake'
-gem 'json'
+gem 'json', '2.1.0'
 gem 'pry-byebug',           '2.0.0' # binding.pry for breakpoints
 gem 'tux'
-gem 'activesupport',        '4.0.0' # utility functions like hash.slice
+gem 'activesupport',        '5.0.0' # utility functions like hash.slice
 gem 'rack-parser',          '0.6.0' # rack middleware
 gem 'require_all'
 gem 'httpclient',           '2.5.2'
@@ -24,13 +24,13 @@ gem 'babosa',                '1.0.2' #creating slugs. (.to_slug)
 gem 'ripl-color_result'    #used to color console output?
 gem 'colorize' 
 gem 'literate_randomizer'
-gem 'faker'
+# gem 'faker'
 gem 'bcrypt'
-gem 'paypal-sdk-adaptivepayments'
-gem 'twilio-ruby'
+# gem 'paypal-sdk-adaptivepayments'
+# gem 'twilio-ruby'
 gem 'postmark'
 gem "sinatra-cross_origin", "~> 0.3.1"
-gem 'mysql2'
+# gem 'mysql2'
 #gem 'base62' #allows compression of mongo ids
 
 group :development, :test do

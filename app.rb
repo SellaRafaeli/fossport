@@ -13,7 +13,7 @@ Bundler.require
 
 Dotenv.load
 
-$app_name   = 'my-app'
+$app_name   = 'fossport'
 
 require './setup'
 require './my_lib'
@@ -31,12 +31,16 @@ get '/ping' do
   {msg: "pong from #{$app_name}", val: 'CarWaiting (is the new TrainSpotting)'}
 end
 
-get '/me' do
-  {cu: cu}
+get '/' do
+  erb :homepage, default_layout
 end
 
-get '/' do
-  erb :homepage, layout: :layout
+get '/supporter/:name' do
+  erb :supporter, default_layout
+end
+
+get '/pkg/:name' do
+  erb :pkg, default_layout
 end
 
 get '/protected' do
